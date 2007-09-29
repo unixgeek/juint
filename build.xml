@@ -68,6 +68,7 @@
       <fileset dir="${basedir}/doc" />
     </copy>
     <copy file="${jarfile}" todir="${dist}" verbose="${verbose}" />
+    <copy file="LICENSE" todir="${dist}" verbose="${verbose}" />    
     <tar destfile="${package.name}-${package.version}.tar.gz" compression="gzip">
       <tarfileset dir="${dist}" prefix="${package.name}-${package.version}" />
     </tar>
