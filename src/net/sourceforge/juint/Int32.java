@@ -1,5 +1,5 @@
 /*
- * $Id: Int32.java 32 2007-09-29 13:45:46Z gunter $
+ * $Id$
  * 
  * Copyright (c) 2006, Gunter Wambaugh
  * 
