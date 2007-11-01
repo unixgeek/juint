@@ -82,7 +82,6 @@
     <delete dir="${test.build}" verbose="${verbose}" />
     <delete dir="${basedir}/doc/api" verbose="${verbose}" />
     <delete file="${jarfile}" verbose="${verbose}" />
-    <delete file="cobertura.ser" verbose="${verbose}" />
   </target>
 
   <target name="distClean" depends="clean" description="remove all build files and distribution files">
