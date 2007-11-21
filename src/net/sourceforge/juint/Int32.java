@@ -218,12 +218,12 @@ public class Int32 extends Number implements Serializable, Comparable<Int32>, Bi
      * @return the value as a big-endian <code>byte</code> array
      */
     public byte[] toBigEndian() {
-        byte[] doulbeWord = new byte[4];
-        doulbeWord[0] = (byte) ((int32 >> 24) & 0xff);
-        doulbeWord[1] = (byte) ((int32 >> 16) & 0xff);
-        doulbeWord[2] = (byte) ((int32 >> 8) & 0xff);
-        doulbeWord[3] = (byte) (int32 & 0xff);
-        return doulbeWord;
+        byte[] doubleWord = new byte[4];
+        doubleWord[0] = (byte) ((int32 >> 24) & 0xff);
+        doubleWord[1] = (byte) ((int32 >> 16) & 0xff);
+        doubleWord[2] = (byte) ((int32 >> 8) & 0xff);
+        doubleWord[3] = (byte) (int32 & 0xff);
+        return doubleWord;
     }
 
     /**
@@ -233,12 +233,12 @@ public class Int32 extends Number implements Serializable, Comparable<Int32>, Bi
      * @return the value as a little-endian <code>byte</code> array
      */
     public byte[] toLittleEndian() {
-        byte[] doulbeWord = new byte[4];
-        doulbeWord[0] = (byte) (int32 & 0xff);
-        doulbeWord[1] = (byte) ((int32 >> 8) & 0xff);
-        doulbeWord[2] = (byte) ((int32 >> 16) & 0xff);
-        doulbeWord[3] = (byte) ((int32 >> 24) & 0xff);
-        return doulbeWord;
+        byte[] doubleWord = new byte[4];
+        doubleWord[0] = (byte) (int32 & 0xff);
+        doubleWord[1] = (byte) ((int32 >> 8) & 0xff);
+        doubleWord[2] = (byte) ((int32 >> 16) & 0xff);
+        doubleWord[3] = (byte) ((int32 >> 24) & 0xff);
+        return doubleWord;
     }
 
     /**
