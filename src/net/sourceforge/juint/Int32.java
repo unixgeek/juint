@@ -36,7 +36,7 @@ import java.io.Serializable;
 /**
  * Signed 32-bit integer.
  */
-public class Int32 extends Number implements Serializable, Comparable, Bitwise<Int32> {
+public class Int32 extends Number implements Serializable, Comparable<Int32>, Bitwise<Int32> {
     /**
      * The largest possible value.
      * <p>
@@ -183,11 +183,11 @@ public class Int32 extends Number implements Serializable, Comparable, Bitwise<I
      * @param object
      *            a <code>Int32</code>
      */
-    public int compareTo(Object object) {
+    public int compareTo(Int32 object) {
         if (equals(object))
             return 0;
         else {
-            return (intValue() - ((Int32) object).intValue());
+            return (intValue() - object.intValue());
         }
     }
 

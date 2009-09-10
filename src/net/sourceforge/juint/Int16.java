@@ -36,7 +36,7 @@ import java.io.Serializable;
 /**
  * Signed 16-bit integer.
  */
-public class Int16 extends Number implements Serializable, Comparable, Bitwise<Int16> {
+public class Int16 extends Number implements Serializable, Comparable<Int16>, Bitwise<Int16> {
     /**
      * The largest possible value.
      * <p>
@@ -203,11 +203,11 @@ public class Int16 extends Number implements Serializable, Comparable, Bitwise<I
      * @param object
      *            a <code>Int16</code>
      */
-    public int compareTo(Object object) {
+    public int compareTo(Int16 object) {
         if (equals(object))
             return 0;
         else {
-            return (shortValue() - ((Int16) object).shortValue());
+            return (shortValue() - object.shortValue());
         }
     }
 

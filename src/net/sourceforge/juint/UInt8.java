@@ -36,7 +36,7 @@ import java.io.Serializable;
 /**
  * Unsigned 8-bit integer.
  */
-public class UInt8 extends Number implements Serializable, Comparable, Bitwise<UInt8> {
+public class UInt8 extends Number implements Serializable, Comparable<UInt8>, Bitwise<UInt8> {
     /**
      * The largest possible value.
      * <p>
@@ -151,11 +151,11 @@ public class UInt8 extends Number implements Serializable, Comparable, Bitwise<U
      * @param object
      *            a <code>UInt8</code>
      */
-    public int compareTo(Object object) {
+    public int compareTo(UInt8 object) {
         if (equals(object))
             return 0;
         else {
-            return (uint8Value() - ((UInt8) object).uint8Value());
+            return (uint8Value() - object.uint8Value());
         }
     }
 
