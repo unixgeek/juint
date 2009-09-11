@@ -37,6 +37,7 @@ import java.io.Serializable;
  * Signed 32-bit integer.
  */
 public class Int32 extends Number implements Serializable, Comparable<Int32>, Bitwise<Int32> {
+    private static final long serialVersionUID = 975684957220885901L;
     /**
      * The largest possible value.
      * <p>

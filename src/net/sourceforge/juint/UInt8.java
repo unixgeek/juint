@@ -37,6 +37,7 @@ import java.io.Serializable;
  * Unsigned 8-bit integer.
  */
 public class UInt8 extends Number implements Serializable, Comparable<UInt8>, Bitwise<UInt8> {
+    private static final long serialVersionUID = 6552272958930747086L;
     /**
      * The largest possible value.
      * <p>
